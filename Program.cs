@@ -19,6 +19,7 @@ namespace Financiero
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new InicioSesion());
 
+            //Este modificacion
 
             /*EmailSenderOptions option = new EmailSenderOptions();
             EmailSender emailSender = new EmailSender(option);
