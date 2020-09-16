@@ -24,7 +24,7 @@ namespace Financiero.Vista
         private async void linkLabelNuevoUsuario_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             inicio.abrirHijosEnPanelAsync(this.groupBoxInicioSesion, inicio.groupBoxCargando);
-            RegistrarSesion registro = await inicio.crearRegistrarSesion();
+            RegistrarSesion registro = await inicio.CrearRegistrarSesion();
             inicio.abrirHijosEnPanelAsync(inicio.groupBoxCargando, registro.groupBoxNuevoUsuario);
             Dispose();
         }

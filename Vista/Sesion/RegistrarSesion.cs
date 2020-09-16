@@ -10,12 +10,11 @@ namespace Financiero.Vista
         {
             InitializeComponent();
             this.inicio = inicioSesion;
-            this.pictureBoxCargando.Visible = false;
             cargando(false);
         }
 
         private void cargando(bool cargando) =>
-            this.groupBoxNuevoUsuario.Visible =
+            this.pictureBoxCargando.Visible =
             this.labelCargando.Visible = false;
 
         private async void iconButtonVolver_Click(object sender, System.EventArgs e)

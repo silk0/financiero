@@ -19,7 +19,7 @@ namespace Financiero
             abrirHijosEnPanelAsync(groupBoxCargando, inicioSesion.groupBoxInicioSesion);
         }
 
-        public async Task<Vista.RegistrarSesion> crearRegistrarSesion() {
+        public async Task<Vista.RegistrarSesion> CrearRegistrarSesion() {
             Vista.RegistrarSesion registrar = null;
             await Task.Run(()=> {
                 Thread.Sleep(250);
