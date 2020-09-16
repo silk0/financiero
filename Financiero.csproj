@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5AE9C344-241D-4A5B-A892-48FFFA24A216}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Financiero</RootNamespace>
+    <AssemblyName>Financiero</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.13.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.5.13.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controlador\Bitacora.cs" />
+    <Compile Include="Controlador\Conexión.cs" />
+    <Compile Include="Controlador\EstadosCivil.cs" />
+    <Compile Include="Controlador\Generos.cs" />
+    <Compile Include="Controlador\Usuario.cs" />
+    <Compile Include="Modelo\Objetos\Bitacora.cs" />
+    <Compile Include="Modelo\Objetos\Cryptography.cs" />
+    <Compile Include="Modelo\Email\EmailSender.cs" />
+    <Compile Include="Modelo\Email\EmailSenderOptions.cs" />
+    <Compile Include="Modelo\Email\IEmailSender.cs" />
+    <Compile Include="Modelo\Objetos\EstadoCivil.cs" />
+    <Compile Include="Modelo\Objetos\Fechas.cs" />
+    <Compile Include="Modelo\Objetos\Personas.cs" />
+    <Compile Include="Modelo\Objetos\Generos.cs" />
+    <Compile Include="Modelo\Objetos\Usuario.cs" />
+    <Compile Include="Modelo\Validaciones\ValidacionesString.cs" />
+    <Compile Include="Vista\Administrador\AccesoAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Administrador\AccesoAdministrador.Designer.cs">
+      <DependentUpon>AccesoAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Administrador\EstadoCivil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Administrador\EstadoCivil.Designer.cs">
+      <DependentUpon>EstadoCivil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Administrador\Generos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Administrador\Generos.Designer.cs">
+      <DependentUpon>Generos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Administrador\GestionarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Administrador\GestionarUsuarios.Designer.cs">
+      <DependentUpon>GestionarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\InicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\InicioSesion.Designer.cs">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\Sesion\RecuperarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Sesion\RecuperarSesion.Designer.cs">
+      <DependentUpon>RecuperarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Sesion\RegistrarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Sesion\RegistrarSesion.Designer.cs">
+      <DependentUpon>RegistrarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Sesion\InicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Sesion\InicioSesion.Designer.cs">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vista\Administrador\AccesoAdministrador.resx">
+      <DependentUpon>AccesoAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Administrador\EstadoCivil.resx">
+      <DependentUpon>EstadoCivil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Administrador\Generos.resx">
+      <DependentUpon>Generos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Administrador\GestionarUsuarios.resx">
+      <DependentUpon>GestionarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\InicioSesion.resx">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Vista\Sesion\RecuperarSesion.resx">
+      <DependentUpon>RecuperarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Sesion\RegistrarSesion.resx">
+      <DependentUpon>RegistrarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Sesion\InicioSesion.resx">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administracion-financiera-2-e1576865717922.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finanzas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\46998.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\46998.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cargando.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Espere.gif" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
