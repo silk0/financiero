@@ -83,6 +83,12 @@
     <Compile Include="Modelo\Objetos\Generos.cs" />
     <Compile Include="Modelo\Objetos\Usuario.cs" />
     <Compile Include="Modelo\Validaciones\ValidacionesString.cs" />
+    <Compile Include="Vista\ActivoFijo\PanelOpcionesActivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\ActivoFijo\PanelOpcionesActivo.Designer.cs">
+      <DependentUpon>PanelOpcionesActivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Administrador\AccesoAdministrador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     <Compile Include="Vista\Sesion\InicioSesion.Designer.cs">
       <DependentUpon>InicioSesion.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vista\ActivoFijo\PanelOpcionesActivo.resx">
+      <DependentUpon>PanelOpcionesActivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Administrador\AccesoAdministrador.resx">
       <DependentUpon>AccesoAdministrador.cs</DependentUpon>
     </EmbeddedResource>

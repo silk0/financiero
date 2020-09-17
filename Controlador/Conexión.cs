@@ -10,7 +10,7 @@ namespace Financiero.Controlador
 
         public Conexión()
         {
-            this.connection = new SqlConnection("server=DESKTOP-B2L4RGL ; database=financiero ; integrated security = true");
+            this.connection = new SqlConnection("server=DESKTOP-NNBONAC ; database=financiero ; integrated security = true");
             //this.connection = new SqlConnection("Data Source = SQL5063.site4now.net; Initial Catalog = DB_A65670_firmyn1; User Id = DB_A65670_firmyn1_admin; Password = juancarlos2");
         }
 

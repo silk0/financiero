@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBoxNuevoUsuario = new System.Windows.Forms.GroupBox();
+            this.labelCargando = new System.Windows.Forms.Label();
+            this.pictureBoxCargando = new System.Windows.Forms.PictureBox();
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButtonVolver = new FontAwesome.Sharp.IconButton();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,15 +46,14 @@
             this.textBoxCorreo = new System.Windows.Forms.TextBox();
             this.iconButtonCancelar = new FontAwesome.Sharp.IconButton();
             this.iconButtonNuevo = new FontAwesome.Sharp.IconButton();
-            this.labelCargando = new System.Windows.Forms.Label();
-            this.pictureBoxCargando = new System.Windows.Forms.PictureBox();
+            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.groupBoxNuevoUsuario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCargando)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCargando)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxNuevoUsuario
@@ -88,6 +88,27 @@
             this.groupBoxNuevoUsuario.TabStop = false;
             this.groupBoxNuevoUsuario.Text = "Nuevo Usuario";
             // 
+            // labelCargando
+            // 
+            this.labelCargando.AutoSize = true;
+            this.labelCargando.Font = new System.Drawing.Font("Georgia", 10F);
+            this.labelCargando.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labelCargando.Location = new System.Drawing.Point(52, 129);
+            this.labelCargando.Name = "labelCargando";
+            this.labelCargando.Size = new System.Drawing.Size(68, 17);
+            this.labelCargando.TabIndex = 27;
+            this.labelCargando.Text = "Cargando";
+            // 
+            // pictureBoxCargando
+            // 
+            this.pictureBoxCargando.Image = global::Financiero.Properties.Resources.Espere;
+            this.pictureBoxCargando.Location = new System.Drawing.Point(11, 120);
+            this.pictureBoxCargando.Name = "pictureBoxCargando";
+            this.pictureBoxCargando.Size = new System.Drawing.Size(35, 35);
+            this.pictureBoxCargando.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxCargando.TabIndex = 26;
+            this.pictureBoxCargando.TabStop = false;
+            // 
             // iconPictureBox5
             // 
             this.iconPictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -115,20 +136,6 @@
             this.iconPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.iconPictureBox4.TabIndex = 24;
             this.iconPictureBox4.TabStop = false;
-            // 
-            // iconPictureBox3
-            // 
-            this.iconPictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.iconPictureBox3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Envelope;
-            this.iconPictureBox3.IconColor = System.Drawing.Color.MidnightBlue;
-            this.iconPictureBox3.IconSize = 25;
-            this.iconPictureBox3.Location = new System.Drawing.Point(15, 239);
-            this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(25, 25);
-            this.iconPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.iconPictureBox3.TabIndex = 23;
-            this.iconPictureBox3.TabStop = false;
             // 
             // iconButtonVolver
             // 
@@ -246,7 +253,7 @@
             // textBoxUsuario
             // 
             this.textBoxUsuario.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.textBoxUsuario.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold);
+            this.textBoxUsuario.Font = new System.Drawing.Font("Georgia", 12F);
             this.textBoxUsuario.Location = new System.Drawing.Point(15, 193);
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(226, 26);
@@ -304,26 +311,19 @@
             this.iconButtonNuevo.UseVisualStyleBackColor = false;
             this.iconButtonNuevo.Click += new System.EventHandler(this.iconButtonNuevo_Click);
             // 
-            // labelCargando
+            // iconPictureBox3
             // 
-            this.labelCargando.AutoSize = true;
-            this.labelCargando.Font = new System.Drawing.Font("Georgia", 10F);
-            this.labelCargando.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labelCargando.Location = new System.Drawing.Point(52, 129);
-            this.labelCargando.Name = "labelCargando";
-            this.labelCargando.Size = new System.Drawing.Size(68, 17);
-            this.labelCargando.TabIndex = 27;
-            this.labelCargando.Text = "Cargando";
-            // 
-            // pictureBoxCargando
-            // 
-            this.pictureBoxCargando.Image = global::Financiero.Properties.Resources.Espere;
-            this.pictureBoxCargando.Location = new System.Drawing.Point(11, 120);
-            this.pictureBoxCargando.Name = "pictureBoxCargando";
-            this.pictureBoxCargando.Size = new System.Drawing.Size(35, 35);
-            this.pictureBoxCargando.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxCargando.TabIndex = 26;
-            this.pictureBoxCargando.TabStop = false;
+            this.iconPictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.iconPictureBox3.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Envelope;
+            this.iconPictureBox3.IconColor = System.Drawing.Color.MidnightBlue;
+            this.iconPictureBox3.IconSize = 25;
+            this.iconPictureBox3.Location = new System.Drawing.Point(15, 239);
+            this.iconPictureBox3.Name = "iconPictureBox3";
+            this.iconPictureBox3.Size = new System.Drawing.Size(25, 25);
+            this.iconPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.iconPictureBox3.TabIndex = 23;
+            this.iconPictureBox3.TabStop = false;
             // 
             // RegistrarSesion
             // 
@@ -336,12 +336,12 @@
             this.Text = "InicioSesion";
             this.groupBoxNuevoUsuario.ResumeLayout(false);
             this.groupBoxNuevoUsuario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCargando)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCargando)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }

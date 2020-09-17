@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace Financiero.Vista
 {
@@ -80,6 +81,7 @@ namespace Financiero.Vista
                     {
                         cargando(false);
                         this.textBoxContrasena.ResetText();
+                        
                     }
                     else
                     {
@@ -133,5 +135,6 @@ namespace Financiero.Vista
             }
 
         }
+
     }
 }

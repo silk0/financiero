@@ -136,6 +136,7 @@
             this.iconPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.iconPictureBox3.TabIndex = 15;
             this.iconPictureBox3.TabStop = false;
+            this.iconPictureBox3.UseGdi = true;
             this.iconPictureBox3.WaitOnLoad = true;
             // 
             // iconPictureBox2
@@ -151,12 +152,12 @@
             this.iconPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.iconPictureBox2.TabIndex = 14;
             this.iconPictureBox2.TabStop = false;
+            this.iconPictureBox2.UseGdi = true;
             this.iconPictureBox2.WaitOnLoad = true;
             // 
             // textBoxContrasena
             // 
             this.textBoxContrasena.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.textBoxContrasena.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxContrasena.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold);
             this.textBoxContrasena.Location = new System.Drawing.Point(15, 342);
             this.textBoxContrasena.Name = "textBoxContrasena";
@@ -201,6 +202,7 @@
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.iconPictureBox1.TabIndex = 10;
             this.iconPictureBox1.TabStop = false;
+            this.iconPictureBox1.UseGdi = true;
             this.iconPictureBox1.WaitOnLoad = true;
             // 
             // label2

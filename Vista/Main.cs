@@ -31,10 +31,6 @@ namespace Financiero.Vista
             formularioHijos.Show();
         }
 
-        private void iconButtonAdministrador_Click(object sender, EventArgs e)
-        {
-            panelSubMenuAdministrador.Visible = !panelSubMenuAdministrador.Visible;
-        }
 
         private void iconButtonGenero_Click(object sender, EventArgs e)
         {
@@ -46,5 +42,14 @@ namespace Financiero.Vista
             abrirHijosEnPanel(new Vista.Estado_Civil());
         }
 
+        private void iconButtonVolver_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconPictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
