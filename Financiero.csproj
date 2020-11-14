@@ -72,6 +72,10 @@
     <Compile Include="Controlador\EstadosCivil.cs" />
     <Compile Include="Controlador\Generos.cs" />
     <Compile Include="Controlador\Usuario.cs" />
+    <Compile Include="Modelo\Activo\activo.cs" />
+    <Compile Include="Modelo\Activo\Ley.cs" />
+    <Compile Include="Modelo\Activo\Proveedor.cs" />
+    <Compile Include="Modelo\Activo\unidad.cs" />
     <Compile Include="Modelo\Objetos\Bitacora.cs" />
     <Compile Include="Modelo\Objetos\Cryptography.cs" />
     <Compile Include="Modelo\Email\EmailSender.cs" />
@@ -83,11 +87,23 @@
     <Compile Include="Modelo\Objetos\Generos.cs" />
     <Compile Include="Modelo\Objetos\Usuario.cs" />
     <Compile Include="Modelo\Validaciones\ValidacionesString.cs" />
+    <Compile Include="Vista\ActivoFijo\Activos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\ActivoFijo\Activos.Designer.cs">
+      <DependentUpon>Activos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\ActivoFijo\PanelOpcionesActivo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista\ActivoFijo\PanelOpcionesActivo.Designer.cs">
       <DependentUpon>PanelOpcionesActivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\ActivoFijo\Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\ActivoFijo\Proveedores.Designer.cs">
+      <DependentUpon>Proveedores.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Administrador\AccesoAdministrador.cs">
       <SubType>Form</SubType>
@@ -112,6 +128,18 @@
     </Compile>
     <Compile Include="Vista\Administrador\GestionarUsuarios.Designer.cs">
       <DependentUpon>GestionarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Clientes\PersonaJuridica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Clientes\PersonaJuridica.Designer.cs">
+      <DependentUpon>PersonaJuridica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Clientes\PersonaNatural.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Clientes\PersonaNatural.Designer.cs">
+      <DependentUpon>PersonaNatural.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\InicioSesion.cs">
       <SubType>Form</SubType>
