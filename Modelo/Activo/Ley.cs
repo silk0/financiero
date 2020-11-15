@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Financiero.Modelo;
+using System;
 
-namespace Modelo.Activo
+namespace Financiero.Modelo.Activo
 {
-    class Ley
+    public class Ley : Fechas
     {
-        private int id { get; }
-        private String nombre { get; }
-        private float porcentaje { get; }
+        public int id { get; }
+        public String nombre { get; }
+        public float porcentaje { get; }
 
         public Ley(int id, string nombre, float porcentaje)
         {
@@ -18,5 +15,7 @@ namespace Modelo.Activo
             this.nombre = nombre;
             this.porcentaje = porcentaje;
         }
+
+
     }
 }

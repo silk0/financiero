@@ -67,15 +67,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlador\Activo\Ley.cs" />
     <Compile Include="Controlador\Bitacora.cs" />
     <Compile Include="Controlador\Conexión.cs" />
     <Compile Include="Controlador\EstadosCivil.cs" />
     <Compile Include="Controlador\Generos.cs" />
     <Compile Include="Controlador\Usuario.cs" />
-    <Compile Include="Modelo\Activo\activo.cs" />
+    <Compile Include="Modelo\Activo\Activo.cs" />
+    <Compile Include="Modelo\Activo\Clasificacion.cs" />
     <Compile Include="Modelo\Activo\Ley.cs" />
     <Compile Include="Modelo\Activo\Proveedor.cs" />
-    <Compile Include="Modelo\Activo\unidad.cs" />
+    <Compile Include="Modelo\Activo\Unidad.cs" />
     <Compile Include="Modelo\Objetos\Bitacora.cs" />
     <Compile Include="Modelo\Objetos\Cryptography.cs" />
     <Compile Include="Modelo\Email\EmailSender.cs" />
@@ -92,6 +94,12 @@
     </Compile>
     <Compile Include="Vista\ActivoFijo\Activos.Designer.cs">
       <DependentUpon>Activos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\ActivoFijo\Ley.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\ActivoFijo\Ley.Designer.cs">
+      <DependentUpon>Ley.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\ActivoFijo\PanelOpcionesActivo.cs">
       <SubType>Form</SubType>
@@ -173,6 +181,9 @@
     <Compile Include="Vista\Sesion\InicioSesion.Designer.cs">
       <DependentUpon>InicioSesion.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vista\ActivoFijo\Ley.resx">
+      <DependentUpon>Ley.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\ActivoFijo\PanelOpcionesActivo.resx">
       <DependentUpon>PanelOpcionesActivo.cs</DependentUpon>
     </EmbeddedResource>
@@ -263,7 +274,9 @@
   <ItemGroup>
     <None Include="Resources\Espere.gif" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="BackupBase\script.sql" />
   </ItemGroup>

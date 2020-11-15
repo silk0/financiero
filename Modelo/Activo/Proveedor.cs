@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Modelo.Activo
+namespace Financiero.Modelo.Activo
 {
-    class Proveedor
+    public class Proveedor
     {
         private int id { get; }
         private String empresa { get; }
